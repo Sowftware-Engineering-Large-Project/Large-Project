@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | CLE TechFest</title>
+  <script>
+    if (/^\/preview\/?$/.test(location.pathname)) {
+      location.replace("/preview/index.html" + location.search + location.hash);
+    }
+  </script>
+  <link rel="stylesheet" href="styles.css?v=4">
+  <script src="app.js?v=4" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell navbar">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">TF</span> CLE TechFest</a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="events.html">Events</a>
+      <a href="attendees.html">Attendees</a>
+      <a href="registration.html">Registration</a>
+      <a href="admin.html">Admin</a>
+    </nav>
+  </div></header>
+  <main class="shell" id="main-content">
+    <section class="hero" aria-labelledby="festival-title">
+      <div class="hero-content">
+        <h1 id="festival-title">CLE <span>TechFest</span></h1>
+        <p class="hero-description">Browse events and register for sessions in Cleveland, Ohio.</p>
+        <p class="festival-date" id="festival-summary"></p>
+        <div class="actions">
+          <a class="button" href="events.html">Explore the schedule &rarr;</a>
+          <a class="button secondary" href="registration.html">Register for an event</a>
+        </div>
+      </div>
+    </section>
+    <section class="panel overview">
+      <h2>TechFest at a glance</h2>
+      <div id="stats" class="stats"></div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="shell"><strong>CLE TechFest</strong><span>Sprint 5 preview · Use fictional information only.</span></div></footer>
+</body>
+</html>

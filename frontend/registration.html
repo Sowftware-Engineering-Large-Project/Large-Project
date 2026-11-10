@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registration | CLE TechFest</title>
+  <link rel="stylesheet" href="styles.css?v=4">
+  <script src="app.js?v=4" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell navbar">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">TF</span> CLE TechFest</a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="attendees.html">Attendees</a>
+      <a href="registration.html" aria-current="page">Registration</a>
+      <a href="admin.html">Admin</a>
+    </nav>
+  </div></header>
+  <main class="shell" id="main-content">
+    <div class="page-intro"><h1>Registration</h1><p>Select an attendee and a scheduled event. <a href="attendees.html">Add an attendee</a> if needed.</p></div><div class="grid"><section class="panel"><h2>Register for an event</h2>
+        <form id="registration-form"><label>Participant<select name="participant_id" required></select></label><label>Event<select name="event_id" required></select></label><div class="actions"><button>Register participant</button></div><p class="feedback" role="status"></p></form></section>
+      <section class="panel"><h2>Registration activity</h2><div id="registration-list" class="record-list"></div></section></div>
+  </main>
+  <footer class="site-footer"><div class="shell"><strong>CLE TechFest</strong><span>Sprint 5 preview · Use fictional information only.</span></div></footer>
+</body>
+</html>

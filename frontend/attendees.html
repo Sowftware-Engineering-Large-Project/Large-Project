@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Attendees | CLE TechFest</title>
+  <link rel="stylesheet" href="styles.css?v=4">
+  <script src="app.js?v=4" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell navbar">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">TF</span> CLE TechFest</a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="attendees.html" aria-current="page">Attendees</a>
+      <a href="registration.html">Registration</a>
+      <a href="admin.html">Admin</a>
+    </nav>
+  </div></header>
+  <main class="shell" id="main-content">
+    <div class="page-intro"><h1>Attendees</h1><p>Create or update a participant profile for the registration demo.</p></div><div class="grid"><section class="panel"><h2>Participant profile</h2>
+        <form id="participant-form"><label>Name<input name="name"  required></label><label>Contact information<input name="contact_info" placeholder="Use a fictional email or phone number" required></label><label>Type<select name="type" required><option>Student</option><option>Professional</option><option>Speaker</option><option>Volunteer</option></select></label><div class="actions"><button>Save participant</button><button type="button" class="secondary" data-reset>Clear</button></div><p class="feedback" role="status"></p></form></section>
+      <section class="panel"><h2>Participants</h2><div id="participant-list" class="record-list"></div></section></div>
+  </main>
+  <footer class="site-footer"><div class="shell"><strong>CLE TechFest</strong><span>Sprint 5 preview · Use fictional information only.</span></div></footer>
+</body>
+</html>
