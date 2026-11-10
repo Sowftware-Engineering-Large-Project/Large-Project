@@ -161,6 +161,7 @@ form + .record-list { margin-top: 20px; }
   border: 1px solid var(--line);
   border-radius: 10px;
   background: #fbf8ff;
+  box-shadow: 0 0 18px rgb(var(--record-glow, 161 116 231) / 14%);
   overflow-wrap: anywhere;
 }
 
@@ -202,16 +203,15 @@ form + .record-list { margin-top: 20px; }
 
 #event-list .record {
   padding: 18px;
-  border-top: 3px solid #a174e7;
 }
 
 #event-list .record strong { font-size: 18px; }
 
 /* Attendees page profile directory */
-#participant-list .record { border-left: 4px solid #8aab35; background: #f9fce9; }
+#participant-list .record { --record-glow: 138 171 53; background: #f9fce9; }
 
 /* Registration page activity list */
-#registration-list .record { border-left: 4px solid #e39359; background: #fff6ec; }
+#registration-list .record { --record-glow: 227 147 89; background: #fff6ec; }
 
 /* Admin page festival summary */
 .festival-panel { margin-bottom: 20px; background: #f0e8ff; }
