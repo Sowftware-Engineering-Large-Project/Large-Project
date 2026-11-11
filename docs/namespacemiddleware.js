@@ -1,6 +1,8 @@
 var namespacemiddleware =
 [
+    [ "event", "namespacemiddleware_1_1event.html", "namespacemiddleware_1_1event" ],
     [ "records", "namespacemiddleware_1_1records.html", "namespacemiddleware_1_1records" ],
+    [ "venue", "namespacemiddleware_1_1venue.html", "namespacemiddleware_1_1venue" ],
     [ "asset", "namespacemiddleware.html#a805c0c8429177289b5d8f89929ac2614", null ],
     [ "index", "namespacemiddleware.html#a149eb92716c1084a935e04a8d95f7347", null ],
     [ "prevent_shared_caching", "namespacemiddleware.html#a0c57427efc510a2c62ada6d86daff09f", null ],

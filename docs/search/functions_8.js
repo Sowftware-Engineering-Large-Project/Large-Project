@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['save_5frecord_0',['save_record',['../namespacemiddleware_1_1records.html#a7250644302e4f6441d8c65b6001d8a9a',1,'middleware::records']]],
-  ['seed_5fdemo_5fcommand_1',['seed_demo_command',['../namespacedb.html#ab9ef10c545c9cb5a16953ef337d7b27d',1,'db']]],
-  ['state_2',['state',['../namespacemiddleware.html#ab17a28cf017dbd6430c6186d0cc8a13b',1,'middleware']]]
+  ['read_5fstate_0',['read_state',['../namespacemiddleware_1_1records.html#a10360dc958158c26e7f99a673ee19f73',1,'middleware::records']]],
+  ['registration_5fvalues_1',['registration_values',['../namespacemiddleware_1_1records.html#adb58cc14e20a2410e7a1aa8600ec36bf',1,'middleware::records']]],
+  ['require_5finitialized_2',['require_initialized',['../namespacedb.html#aa1fc76b51ef79215d249fac7fa6974c5',1,'db']]],
+  ['require_5fteam_5faccess_3',['require_team_access',['../namespacemiddleware.html#aceb04774d216e7127ddf11e902964f87',1,'middleware']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['invalidrecord_0',['InvalidRecord',['../classmiddleware_1_1records_1_1_invalid_record.html',1,'middleware::records']]]
+  ['event_0',['Event',['../classmiddleware_1_1event_1_1_event.html',1,'middleware::event']]]
 ];

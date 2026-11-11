@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['write_0',['write',['../namespacemiddleware.html#a82e31cf7eb57e0d53154ef99c111223e',1,'middleware']]]
+  ['update_5fdetails_0',['update_details',['../classmiddleware_1_1event_1_1_event.html#a743f2dca9a21a36f32ba88e889851a29',1,'middleware::event::Event']]]
 ];
