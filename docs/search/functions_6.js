@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['parse_5fdemo_5fdate_0',['parse_demo_date',['../namespacedb.html#a7b0e1c0acb2272c7d3160183f1aa6d8e',1,'db']]],
-  ['participant_5fvalues_1',['participant_values',['../namespacemiddleware_1_1records.html#a4fb82bc8008f7d3535941f0c8713fe7d',1,'middleware::records']]],
-  ['prevent_5fshared_5fcaching_2',['prevent_shared_caching',['../namespacemiddleware.html#a0c57427efc510a2c62ada6d86daff09f',1,'middleware']]]
+  ['index_0',['index',['../namespacemiddleware.html#a149eb92716c1084a935e04a8d95f7347',1,'middleware']]],
+  ['init_5fapp_1',['init_app',['../namespacedb.html#a1ba4ef708b9e588a432c0ef3bc6392a6',1,'db']]],
+  ['init_5fdb_5fcommand_2',['init_db_command',['../namespacedb.html#aff1455e2734c875c7887de7de76d3024',1,'db']]],
+  ['integer_3',['integer',['../namespacemiddleware_1_1records.html#a74c819237355ff6af8b9c442b4794fcb',1,'middleware::records']]],
+  ['is_5finitialized_4',['is_initialized',['../namespacedb.html#aa98df63d22c6a1ce610df94d2c1abcc1',1,'db']]]
 ];

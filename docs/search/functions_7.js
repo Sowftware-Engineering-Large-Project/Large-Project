@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['read_5fstate_0',['read_state',['../namespacemiddleware_1_1records.html#a10360dc958158c26e7f99a673ee19f73',1,'middleware::records']]],
-  ['registration_5fvalues_1',['registration_values',['../namespacemiddleware_1_1records.html#adb58cc14e20a2410e7a1aa8600ec36bf',1,'middleware::records']]],
-  ['require_5finitialized_2',['require_initialized',['../namespacedb.html#aa1fc76b51ef79215d249fac7fa6974c5',1,'db']]],
-  ['require_5fteam_5faccess_3',['require_team_access',['../namespacemiddleware.html#aceb04774d216e7127ddf11e902964f87',1,'middleware']]]
+  ['parse_5fdemo_5fdate_0',['parse_demo_date',['../namespacedb.html#a7b0e1c0acb2272c7d3160183f1aa6d8e',1,'db']]],
+  ['participant_5fvalues_1',['participant_values',['../namespacemiddleware_1_1records.html#a4fb82bc8008f7d3535941f0c8713fe7d',1,'middleware::records']]],
+  ['prevent_5fshared_5fcaching_2',['prevent_shared_caching',['../namespacemiddleware.html#a0c57427efc510a2c62ada6d86daff09f',1,'middleware']]]
 ];
