@@ -3,6 +3,11 @@
 from datetime import datetime
 
 from db import TABLES
+from .venue import Venue
+from .event import Event
+
+
+
 
 PARTICIPANT_TYPES = {"Student", "Professional", "Speaker", "Volunteer"}
 MAX_SQLITE_ID = 2**63 - 1
@@ -82,6 +87,7 @@ def participant_values(_connection, payload, _existing):
 def event_values(connection, payload, existing):
     venue_id = integer(payload, "venue_id", "venue")
     venue = get_record(connection, "venues", venue_id, "Venue")
+    venue_object = Venue.from_row(venue)
     festival = (get_record(connection, "festivals", existing["festival_id"], "Festival")
                 if existing else connection.execute("SELECT * FROM festivals ORDER BY id LIMIT 1").fetchone())
     if festival is None:
@@ -95,15 +101,20 @@ def event_values(connection, payload, existing):
         raise InvalidRecord(f"Keep the event within {festival['start_date']} to {festival['end_date']}.")
 
     capacity = integer(payload, "capacity", "capacity", 2**53 - 1)
-    if capacity > venue["capacity"]:
+    if not venue_object.can_hold(capacity):
         raise InvalidRecord("Event capacity cannot exceed the venue capacity.")
-    return {
-        "festival_id": festival["id"], "venue_id": venue_id,
-        "title": text(payload, "title", "an event title"),
-        "description": text(payload, "description", "an event description", 2000),
-        "starts_at": starts.isoformat(timespec="seconds"),
-        "ends_at": ends.isoformat(timespec="seconds"), "capacity": capacity,
-    }
+    event = Event(
+        event_id=existing["id"] if existing else None,
+        festival_id=festival["id"],
+        venue_id=venue_id,
+        title=text(payload, "title", "an event title"),
+        description=text(payload, "description", "an event description", 2000),
+        starts_at=starts,
+        ends_at=ends,
+        capacity=capacity,
+        status=existing["status"] if existing else "Scheduled"
+    )
+    return event.to_record()
 
 
 def registration_values(connection, payload, _existing):
